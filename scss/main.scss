@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$x: 1;
+div.box {
+  @if ($x==1) {
+    width: 500px;
+    height: 200px;
+    background-color: lightpink;
+    margin: 150px auto;
+  } @else if ($x==2) {
+    width: 500px;
+    height: 200px;
+    background-color: skyblue;
+    margin: 150px auto;
+  } @else if ($x==3) {
+    width: 500px;
+    height: 200px;
+    background-color: yellowgreen;
+    margin: 150px auto;
+  } @else {
+    width: 600px;
+    height: 200px;
+    background-color: yellow;
+    margin: 150px auto;
+  }
+}
